@@ -16,4 +16,4 @@ Clone repository.
 
 Run pac_install.sh with sudo.
 
-Run post_install.sh with sudo.
+Run post_install.sh without sudo.

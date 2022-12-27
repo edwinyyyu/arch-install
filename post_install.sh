@@ -24,20 +24,20 @@ cp ./config_files/git/.gitconfig ~/.gitconfig
 git clone https://github.com/edwinyyyu/nvim-config.git ~/.config/nvim/
 
 # Firefox
-mkdir -p /usr/lib/firefox/defaults/pref/
-cp ./config_files/firefox/autoconfig.js /usr/lib/firefox/defaults/pref/autoconfig.js
-cp ./config_files/firefox/firefox.cfg /usr/lib/firefox/firefox.cfg
+sudo mkdir -p /usr/lib/firefox/defaults/pref/
+sudo cp ./config_files/firefox/autoconfig.js /usr/lib/firefox/defaults/pref/autoconfig.js
+sudo cp ./config_files/firefox/firefox.cfg /usr/lib/firefox/firefox.cfg
 
 # Thunar
 mkdir -p ~/.config/xfce4/
 echo "TerminalEmulator=alacritty" > ~/.config/xfce4/helpers.rc
 
 # Undervolt
-nvim -i NONE /etc/intel-undervolt.conf
-intel-undervolt apply
-systemctl enable intel-undervolt
+sudo nvim -i NONE /etc/intel-undervolt.conf
+sudo intel-undervolt apply
+sudo systemctl enable intel-undervolt
 
 # Miscellaneous
-cp ./config_files/misc/background.jpg /usr/share/backgrounds/background.jpg
+sudo cp ./config_files/misc/background.jpg /usr/share/backgrounds/background.jpg
 cp ./config_files/misc/clean ~/Scripts/clean
 cp ./config_files/misc/Default.ott ~/Templates/Default.ott
