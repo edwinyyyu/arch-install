@@ -2,6 +2,8 @@
 ## Usage
 Boot Arch Linux live environment.
 
+Ensure archlinux-keyring is updated.
+
 Ensure git is installed.
 
 Clone repository.
