@@ -6,8 +6,8 @@ mkdir -p ~/Projects/
 mkdir -p ~/Scripts/
 
 # Bash
-cp .config_files/bash/.bash_profile ~/.bash_profile
-cp .config_files/bash/.bashrc ~/.bashrc
+cp ./config_files/bash/.bash_profile ~/.bash_profile
+cp ./config_files/bash/.bashrc ~/.bashrc
 
 # Alacritty
 mkdir -p ~/.config/alacritty/
