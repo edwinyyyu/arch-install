@@ -16,6 +16,7 @@ cp ./config_files/alacritty/alacritty.yml ~/.config/alacritty/alacritty.yml
 # SwayWM
 mkdir -p ~/.config/sway/
 cp ./config_files/sway/config ~/.config/sway/config
+sudo cp ./config_files/sway/i3status.conf /etc/i3status.conf
 
 # Git
 cp ./config_files/git/.gitconfig ~/.gitconfig
