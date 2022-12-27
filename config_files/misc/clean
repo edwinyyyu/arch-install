@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo "" > /var/log/pacman.log
+paccache -rk0
+
+rm ~/.local/share/recent*
+rm -r ~/.cache/*
+
+journalctl --vacuum-size=1M

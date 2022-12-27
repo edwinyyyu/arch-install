@@ -1,0 +1,7 @@
+[user]
+	email = edwinyyyu@gmail.com
+	name = Edwin Yu
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim -i NONE
