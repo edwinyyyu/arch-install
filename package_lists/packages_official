@@ -57,13 +57,10 @@ pipewire-alsa
 pipewire-pulse
 polkit-gnome
 python
-python-beautifulsoup4
-python-dnspython
 python-matplotlib
 python-numpy
 python-pandas
 python-pip
-python-pymongo
 python-scikit-learn
 python-seaborn
 qgis
