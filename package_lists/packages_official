@@ -85,6 +85,7 @@ udftools
 unzip
 valgrind
 virtualbox
+wget
 wl-clipboard
 xarchiver
 xdg-desktop-portal-wlr
