@@ -24,6 +24,10 @@ cp ./config_files/git/.gitconfig ~/.gitconfig
 # Neovim
 git clone https://github.com/edwinyyyu/nvim-config.git ~/.config/nvim/
 
+# Mako
+mkdir -p ~/.config/mako/
+cp ./config_files/mako/config ~/.config/mako/config
+
 # Firefox
 sudo mkdir -p /usr/lib/firefox/defaults/pref/
 sudo cp ./config_files/firefox/autoconfig.js /usr/lib/firefox/defaults/pref/autoconfig.js

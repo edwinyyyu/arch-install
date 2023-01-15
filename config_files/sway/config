@@ -14,7 +14,18 @@ set $term alacritty
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
-set $menu bemenu-run --fn "Noto Sans Mono Bold 8"
+set $menu bemenu-run -H 22 -i -p 'menu' \
+    --fn 'Noto Sans Mono Bold 8' \
+    --tb '#6272a4' \
+    --tf '#f8f8f2' \
+    --fb '#282a36' \
+    --ff '#f8f8f2' \
+    --nb '#282a36' \
+    --nf '#6272a4' \
+    --ab '#282a36' \
+    --af '#6272a4' \
+    --hb '#44475a' \
+    --hf '#f8f8f2'
 
 ### Output configuration
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -54,6 +65,12 @@ exec_always {
     gsettings set org.gnome.desktop.interface monospace-font-name 'Noto Sans Mono 10'
     gsettings set org.gnome.desktop.interface font-name 'Noto Sans Regular 10'
 }
+# Colors
+# class border background text indicator child_border
+client.focused #6272A4 #6272A4 #F8F8F2 #6272A4 #6272A4
+client.focused_inactive #44475A #44475A #F8F8F2 #44475A #44475A
+client.unfocused #282A36 #282A36 #BFBFBF #282A36 #282A36
+client.urgent #44475A #FF5555 #F8F8F2 #FF5555 #FF5555
 
 ### Autostart
 exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -224,7 +241,15 @@ bar {
     status_command i3status
 
     colors {
-        background #323232
+        background #282A36
+        statusline #F8F8F2
+        separator #44475A
+
+        focused_workspace #44475A #44475A #F8F8F2
+        active_workspace #282A36 #44475A #F8F8F2
+        inactive_workspace #282A36 #282A36 #BFBFBF
+        urgent_workspace #FF5555 #FF5555 #F8F8F2
+        binding_mode #FF5555 #FF5555 #F8F8F2
     }
 }
 #
@@ -249,7 +274,7 @@ for_window [title="nmtui-win"] floating enable
 for_window [title="openconnect-win"] floating enable
 set $mode_network Network (o) Connections, (p) UCLA VPN
 mode "$mode_network" {
-    bindsym o exec alacritty -t "nmtui-win" -e nmtui, mode "default"
+    bindsym o exec ahttps://github.com/dracula/bemenulacritty -t "nmtui-win" -e nmtui, mode "default"
     bindsym p exec alacritty -t "openconnect-win" -e \
         pkexec openconnect -u edwinyyyu ssl.vpn.ucla.edu, mode "default"
     
