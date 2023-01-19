@@ -20,6 +20,7 @@ geckodriver
 ghostscript
 gnome-disk-utility
 gnome-keyring
+gphoto2
 grim
 gscan2pdf
 gsfonts
@@ -59,6 +60,7 @@ polkit-gnome
 python
 python-matplotlib
 python-numpy
+python-opencv
 python-pandas
 python-pip
 python-scikit-learn
