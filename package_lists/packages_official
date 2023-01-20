@@ -58,6 +58,7 @@ pipewire-alsa
 pipewire-pulse
 polkit-gnome
 python
+python-gphoto2
 python-matplotlib
 python-numpy
 python-opencv
