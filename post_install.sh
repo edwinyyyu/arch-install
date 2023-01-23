@@ -46,3 +46,5 @@ sudo systemctl enable intel-undervolt
 sudo cp ./config_files/misc/background.jpg /usr/share/backgrounds/background.jpg
 cp ./config_files/misc/clean ~/Scripts/clean
 cp ./config_files/misc/Default.ott ~/Templates/Default.ott
+
+gsettings set org.x.editor.preferences.editor restore-cursor-position false
