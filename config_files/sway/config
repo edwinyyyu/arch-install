@@ -273,7 +273,7 @@ for_window [title="nmtui-win"] floating enable
 for_window [title="openconnect-win"] floating enable
 set $mode_network Network (o) Connections, (p) UCLA VPN
 mode "$mode_network" {
-    bindsym o exec ahttps://github.com/dracula/bemenulacritty -t "nmtui-win" -e nmtui, mode "default"
+    bindsym o exec alacritty -t "nmtui-win" -e nmtui, mode "default"
     bindsym p exec alacritty -t "openconnect-win" -e \
         pkexec openconnect -u edwinyyyu ssl.vpn.ucla.edu, mode "default"
     
