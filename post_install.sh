@@ -42,6 +42,9 @@ sudo nvim -i NONE /etc/intel-undervolt.conf
 sudo intel-undervolt apply
 sudo systemctl enable intel-undervolt
 
+# VS Code
+cp ./config_files/code/code-flags.conf ~/.config/
+
 # Miscellaneous
 sudo cp ./config_files/misc/background.jpg /usr/share/backgrounds/background.jpg
 cp ./config_files/misc/clean ~/Scripts/clean

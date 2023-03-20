@@ -1,5 +1,4 @@
 alacritty
-arduino-cli
 bemenu
 breeze
 breeze-gtk
@@ -68,7 +67,6 @@ python-pandas
 python-pip
 python-scikit-learn
 python-seaborn
-qgis
 qt5ct
 qt6-wayland
 qt6ct
