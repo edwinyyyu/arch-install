@@ -4,6 +4,7 @@ echo "" > /var/log/pacman.log
 paccache -rk0
 
 rm ~/.local/share/recent*
+rm ~/.local/state/nvim/shada/*
 rm -r ~/.cache/*
 
 journalctl --vacuum-size=1M
