@@ -40,10 +40,13 @@ echo "TerminalEmulator=alacritty" > ~/.config/xfce4/helpers.rc
 # Undervolt
 sudo nvim -i NONE /etc/intel-undervolt.conf
 sudo intel-undervolt apply
-sudo systemctl enable intel-undervolt
+sudo systemctl enable intel-undervolt.service
 
 # VS Code
 cp ./config_files/code/code-flags.conf ~/.config/
+
+# Docker
+sudo systemctl enable docker.service
 
 # Miscellaneous
 sudo cp ./config_files/misc/background.jpg /usr/share/backgrounds/background.jpg
