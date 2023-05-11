@@ -5,10 +5,8 @@ breeze-gtk
 brightnessctl
 darktable
 discord
-djvulibre
 docker
 docker-compose
-ebook-tools
 exfatprogs
 f2fs-tools
 fcitx5-chinese-addons
@@ -18,13 +16,11 @@ freerdp
 fwupd
 gdb
 geckodriver
-ghostscript
 gnome-disk-utility
 gnome-keyring
 gphoto2
 grim
 gscan2pdf
-gsfonts
 gvfs
 htop
 i3status
@@ -34,12 +30,10 @@ jupyterlab
 kdenlive
 krita
 libreoffice-fresh
-libspectre
 mako
 man-db
 man-pages
 mpv
-netcdf
 nm-connection-editor
 nodejs
 nomacs
@@ -59,7 +53,7 @@ physlock
 pipewire
 pipewire-alsa
 pipewire-pulse
-polkit-gnome
+polkit-kde-agent
 python
 python-gphoto2
 python-matplotlib
@@ -74,6 +68,7 @@ qt6-wayland
 qt6ct
 reflector
 remmina
+ripgrep
 slurp
 strace
 sway

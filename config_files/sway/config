@@ -72,7 +72,9 @@ client.unfocused #282A36 #282A36 #BFBFBF #282A36 #282A36
 client.urgent #44475A #FF5555 #F8F8F2 #FF5555 #FF5555
 
 ### Autostart
-exec_always /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec_always /usr/lib/polkit-kde-authentication-agent-1
+for_window [title="PolicyKit"] floating enable
+
 exec_always fcitx5 -d
 
 ### Key bindings
@@ -106,7 +108,7 @@ bindsym XF86MonBrightnessUp exec brightnessctl --exponent=2.71828 set +10%
 
     # Start a browser
     bindsym $mod+Shift+f exec firefox
-    
+
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
     # Despite the name, also works for non-floating windows.
@@ -260,7 +262,7 @@ mode "$mode_exit" {
     bindsym i exec systemctl reboot, mode "default"
     bindsym o exec systemctl poweroff, mode "default"
     bindsym p exec systemctl suspend, mode "default"
-    
+
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
@@ -276,7 +278,7 @@ mode "$mode_network" {
     bindsym o exec alacritty -t "nmtui-win" -e nmtui, mode "default"
     bindsym p exec alacritty -t "openconnect-win" -e \
         pkexec openconnect -u edwinyyyu ssl.vpn.ucla.edu, mode "default"
-    
+
     # Return to default mode
     bindsym Return mode "default"
     bindsym Escape mode "default"
