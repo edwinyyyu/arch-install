@@ -36,7 +36,6 @@ man-pages
 mpv
 nm-connection-editor
 nodejs
-nomacs
 noto-fonts
 noto-fonts-cjk
 noto-fonts-emoji
@@ -44,7 +43,7 @@ npm
 ntfs-3g
 obs-studio
 okular
-openblas
+blas-openblas
 openconnect
 p7zip
 pacman-contrib
