@@ -15,6 +15,6 @@ alias diff='diff --color=auto'
 
 alias win='nvim -i NONE'
 
-alias g3x='g++ -std=c++17 -fsanitize=address -fsanitize=undefined -fno-omit-frame-pointer -fsanitize=bounds -Wall -Wextra -Wno-sign-compare -Werror=return-type'
+alias g++='g++ -std=c++17 -g -pedantic-errors -Wall -Wextra -Weffc++ -Wconversion -Wsign-conversion -Werror'
 
 export PATH=$PATH:~/Scripts
