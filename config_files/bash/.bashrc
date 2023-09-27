@@ -13,8 +13,6 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias diff='diff --color=auto'
 
-alias win='nvim -i NONE'
-
-alias g++='g++ -std=c++17 -g -pedantic-errors -Wall -Wextra -Weffc++ -Wconversion -Wsign-conversion -Werror'
+alias g++='g++ -std=c++17 -g -pedantic-errors -Wall -Wextra -Weffc++ -Wconversion -Wsign-conversion -Wshadow -Werror'
 
 export PATH=$PATH:~/Scripts
