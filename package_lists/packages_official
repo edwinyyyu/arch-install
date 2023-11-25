@@ -46,6 +46,7 @@ obs-studio
 okular
 blas-openblas
 openconnect
+openssl
 p7zip
 pacman-contrib
 pavucontrol
@@ -54,6 +55,7 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 polkit-kde-agent
+pyenv
 python
 python-gphoto2
 python-matplotlib
@@ -80,6 +82,7 @@ thunar-archive-plugin
 thunar-media-tags-plugin
 thunar-volman
 time
+tk
 transmission-gtk
 udftools
 unzip
@@ -93,5 +96,7 @@ xdg-desktop-portal-wlr
 xed
 xorg-xeyes
 xorg-xwayland
+xz
 yt-dlp
 zip
+zlib
