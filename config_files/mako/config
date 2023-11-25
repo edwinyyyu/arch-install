@@ -1,11 +1,11 @@
-background-color=#282a36
-text-color=#f8f8f2
+background-color=#1c1c1e
+text-color=#ffffff
 
 [urgency=low]
-border-color=#282a36
+border-color=#1c1c1e
 
 [urgency=normal]
-border-color=#6272a4
+border-color=#8e8e93
 
 [urgency=high]
-border-color=#ff5555
+border-color=#ff443a

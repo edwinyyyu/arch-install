@@ -16,16 +16,16 @@ set $term alacritty
 # on the original workspace that the command was run on.
 set $menu bemenu-run -H 22 -i -p 'menu' \
     --fn 'Noto Sans Mono Bold 8' \
-    --tb '#6272a4' \
-    --tf '#f8f8f2' \
-    --fb '#282a36' \
-    --ff '#f8f8f2' \
-    --nb '#282a36' \
-    --nf '#6272a4' \
-    --ab '#282a36' \
-    --af '#6272a4' \
-    --hb '#44475a' \
-    --hf '#f8f8f2'
+    --tb '#8e8e93' \
+    --tf '#ffffff' \
+    --fb '#2c2c2e' \
+    --ff '#ffffff' \
+    --nb '#2c2c2e' \
+    --nf '#8e8e93' \
+    --ab '#2c2c2e' \
+    --af '#8e8e93' \
+    --hb '#48484a' \
+    --hf '#ffffff'
 
 ### Output configuration
 # You can get the names of your outputs by running: swaymsg -t get_outputs
@@ -43,11 +43,13 @@ exec_always swayidle -w \
 input type:pointer {
     accel_profile flat
     pointer_accel 0
+    natural_scroll enabled
 }
 
 input type:touchpad {
     dwt disabled
     scroll_method edge
+    natural_scroll enabled
     tap enabled
 }
 
@@ -66,10 +68,10 @@ exec_always {
 }
 # Colors
 # class border background text indicator child_border
-client.focused #6272A4 #6272A4 #F8F8F2 #6272A4 #6272A4
-client.focused_inactive #44475A #44475A #F8F8F2 #44475A #44475A
-client.unfocused #282A36 #282A36 #BFBFBF #282A36 #282A36
-client.urgent #44475A #FF5555 #F8F8F2 #FF5555 #FF5555
+client.focused #8E8E93 #8E8E93 #FFFFFF #8E8E93 #8E8E93
+client.focused_inactive #48484A #48484A #FFFFFF #48484A #48484A
+client.unfocused #2C2C2E #2C2C2E #8E8E93 #2C2C2E #2C2C2E
+client.urgent #48484A #FF443A #FFFFFF #FF443A #FF443A
 
 ### Autostart
 exec_always /usr/lib/polkit-kde-authentication-agent-1
@@ -242,15 +244,15 @@ bar {
     status_command i3status
 
     colors {
-        background #282A36
-        statusline #F8F8F2
-        separator #44475A
+        background #1C1C1E
+        statusline #FFFFFF
+        separator #8E8E93
         # class border background text
-        focused_workspace #6272A4 #6272A4 #F8F8F2
-        active_workspace #44475A #44475A #F8F8F2
-        inactive_workspace #282A36 #282A36 #BFBFBF
-        urgent_workspace #FF5555 #FF5555 #F8F8F2
-        binding_mode #FF5555 #FF5555 #F8F8F2
+        focused_workspace #8E8E93 #8E8E93 #FFFFFF
+        active_workspace #48484A #48484A #FFFFFF
+        inactive_workspace #2C2C2E #2C2C2E #8E8E93
+        urgent_workspace #FF443A #FF443A #FFFFFF
+        binding_mode #FF443A #FF443A #FFFFFF
     }
 }
 #
