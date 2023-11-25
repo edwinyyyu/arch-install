@@ -5,3 +5,5 @@
 	defaultBranch = main
 [core]
 	editor = nvim -i NONE
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
